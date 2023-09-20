@@ -6,12 +6,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
     <!--Külső (ecternal stílusbeállítás csatolása a HTML-hez)-->>
+    <style>
+        h1 {
+            color: blue;
+        }
+    </style> <!--belső (internal) stílusbeállítás-->>
     <title>Document</title> <!--a böngésző megjelenő cím-->>
 </head>
 <body> <!--A felhasználónak ad információkat-->>
     <h1></h1> <!--Egyes szintű címsor (Főcím)-->>
     <h2></h2> - <h6></h6> 
+    <h1 style="color: pink;"></h1> <!--inline stílusbeállítás-->>
     <p></p> <!--Bekezdés létrehozása-->>
-    <img src="" alt="" title="">
+    <img src="" alt="" title=""> <!--kép beillesztése; src forrásválasztó források helye: 1. mappa (img/kep.jpg) 2. link; alt; ha nem jeleníthető meg a kép; title: ha a kép fölé visszük az egeret-->
+    <a href="https://...." target="_blank">LINK</a>
+    <a href="cica.html"> Navigáció saját oldalon</a>
+    <a href="#leiras">UGRÓPONT</a>
+    <br> <!--Sortörés-->
+    <hr> <!--Vízszintes vonal-->
+    <ul>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+    </ul> <!--számozatlan felsorolás emmet (gyorskód): ul>li*5 (5 elemnől álló lista)-->
+    <ol>
+        <li></li>
+        <li></li>
+    </ol> <!--Számoott felsorolás-->
+    <ul class="cica" id="kutya">
+        <li></li>
+        <li></li>
+        <li></li>
+    </ul> <!--emmet (gyorskód): ul.cica#kutya>li*3-->>
 </body>
 </html>
