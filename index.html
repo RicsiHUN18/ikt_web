@@ -44,22 +44,33 @@
         <caption>TÁBLÁZAT CÍME</caption>
         <thead>
             <tr>
-                <th colspan="2"></th><!--Fejléc cella oszlopok kialakítása sorok összevonása-->
+                <th rowspan="2"></th> <!--fejléc cella, oszlopok kialakítása, sorok összevonása-->
                 <th></th>
                 <th></th>
-            </tr><!--Táblázat sora-->
-            <tbody>
-                <tr>
-                    <td></td><!--Táblacella / Table data-->
-                    <td></td>
-                </tr>
-                <tfoot>
+            </tr> <!--a táblázat sora-->
+        </thead> <!--a táblázat fejrésze / fejléc-->
+        <tbody>
+            <tr>
+                <td></td> <!--adatcella-->
+                <td></td>
+                <td colspan="2"></td> <!--oszlopok összevonása-->
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+        </tbody> <!--a táblázat törzse-->
+        <tfoot>
 
-                </tfoot><!--Táblázat lábléce / lábrésze-->
-            </tbody><!--Táblázat törzse-->
-        </thead><!--A táblázat fejrésze / fejléc-->
-    </table><!--táblázat létrehozása-->
-    <table> <!--table>tr*3>td*2-->
+        </tfoot> <!--a táblázat lábrésze / lábléc-->
+    </table> <!--táblázat létrehozása-->
+    <table>
         <tr>
             <td></td>
             <td></td>
@@ -72,14 +83,21 @@
             <td></td>
             <td></td>
         </tr>
-    </table>
-    <div></div><!--keret, reészekre osztja a weboldal-->
-    <b></b> vagy <strong></strong> <!--Félkövérré teszi a szöveget-->
-    <i></i> vagy <em></em> <!--Dőltbetűkké teszi a szöveget-->
-    <u></u> <!--Aláhúzottá teszi a szöveget-->
-    <span></span> <!--Egyedileg szerkezthetőek a szövegrészek, szavak-->
+    </table> <!--emmet (gyorskód) 3 sorból álló 2 oszlopos táblázat: table>tr*3>td*2-->
+    <div></div> <!--keret, részekre osztja a weboldalt-->
+    <b></b> vagy <strong></strong> <!--félkövérré teszi a szöveget-->
+    <i></i> vagy <em></em> <!--dőlt betűssé teszi a szöveget-->
+    <u></u> <!--aláhúzottá teszi a szöveget-->
+    <span></span> <!--egyedileg szerkeszthetőek a szövegrészek, szavak-->
     <form action="">
+        <label for="vezeteknev">Vezeték név:</label> <!--Nevet , címet lehet beállítani-->
+        <input id="vezeteknev" type="text" placeholder="Kiss"> <!--beviteli mező, típusa szöveg; egyedi azonosító azért kell hogy a laber for részébe be tudjuk írni és ezzel összekapcsolhatjuk őket; a placeholder segítséget nyújt a felhasználónak, hogy mit és hogyan kell beírnia az adott mezőbe-->
 
-    </form>  <!--Űrlap készítéshez használjuk-->
+        <!--W3Schools-ban szerkesztett verzió:-->
+        <label for="vezeteknev">Vezeték név:</label>
+        <input type="text" id="vezeteknev"><br>
+        <label for="keresztnev">Kereszt név:</label>
+        <input type="text" id="keresztnev"><br><br>
+    </form> <!--űrlap készítéséhez használjuk-->
 </body>
 </html>
